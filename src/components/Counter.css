@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainDiv{
+background-color: rgb(111, 103, 103);
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.Counter{
+ margin-bottom: 10%;
+ font-size: 40px;
+ color: white;
+ margin-left: 100px;
+}
+.add{
+  padding: 10px 30px;
+  position: relative;
+  right: 16%;
+  border: 2px solid white;
+  background-color: rgb(131, 230, 98);
+  color: white;
+  font-weight: 600;
+}
+.sub{
+  padding: 10px 30px;
+  position: relative;
+  right: 14%;
+  border: 2px solid white;
+  background-color: rgb(229, 104, 104);
+  color: white;
+  font-weight: 600;
+}
