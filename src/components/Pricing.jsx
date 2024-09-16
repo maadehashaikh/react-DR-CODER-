@@ -2,13 +2,13 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import  Loader  from './Loader';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   const [products, setProducts] = useState([]);
   const [loader,setLoader] = useState(false);
   const fetchProducts = async () => {
     setLoader(true);
-    console.log(loader);
     const response = await axios.get("https://fakestoreapi.com/products");
     setProducts(response.data);
     setLoader(false);
@@ -29,7 +29,7 @@ const Pricing = () => {
               <p>{product.description.slice(0,90)}...Read More</p>
               <img src={product.image} width={"100px"} height={"100px"}/><br />
               <span> Price :{product.price}$</span><br />
-              <span>Rating :{product.rating.rate}</span>
+              <button style={{backgroundColor:"yellow",color:"black",border:"none",padding:"5px",borderRadius:"7px"}}><Link to={`/pricing/${product.id}`}>Buy Now</Link></button>
             </div>
             </>
           )

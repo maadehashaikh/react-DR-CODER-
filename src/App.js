@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Features from './components/Features';
 import Pricing from './components/Pricing'; 
+import ProductDesc from './components/ProductDesc';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/' element={<Counter/>}/>
       <Route path='/features' element={<Features/>}/>
       <Route path='/pricing' element={<Pricing/>}/>
+      <Route path='/pricing/:id' element={<ProductDesc/>}/>
       <Route path='/User' element={<User/>}/>
     </Routes>
     </>
