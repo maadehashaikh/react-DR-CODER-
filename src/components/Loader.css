@@ -3,7 +3,7 @@
   width: 22px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: #F10C49;
+  background: #d70e43;
   animation: l10 1.5s infinite linear;
 }
 @keyframes l10 {
